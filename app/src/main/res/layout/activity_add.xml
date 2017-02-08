@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:windowSoftInputMode="stateHidden"
+    >
+
+    <RelativeLayout
+        android:id="@+id/activity_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollIndicators="bottom"
+        android:background="@android:color/white"
+        tools:context="com.example.dshah2967.theroster.AddActivity">
+
+
+        <ImageView
+            android:id="@+id/menubar"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:src="@drawable/menubar"
+            android:scaleType="fitStart"
+            />
+
+        <EditText
+            android:id="@+id/name_editBox"
+            style="@style/edit_text"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/mauve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:textSize="30sp"
+            android:layout_below="@+id/menubar"
+            android:layout_alignParentStart="true"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <TextView
+            android:id="@+id/steady_textView"
+            style="@style/text_view"
+            android:layout_below="@id/name_editBox"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginLeft="@dimen/ten"
+            android:textColor="@color/mauve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thinks we are going steady?"/>
+
+
+        <CheckBox
+            android:id="@+id/yes_checkBox"
+            android:layout_below="@id/steady_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textColor="@color/text"
+            />
+        <CheckBox
+            android:id="@+id/no_checkBox"
+            android:layout_toRightOf="@id/yes_checkBox"
+            android:layout_below="@id/steady_textView"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/text"
+            />
+        <TextView
+            style="@style/text_view"
+            android:id="@+id/eye_textView"
+            android:layout_below="@id/yes_checkBox"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eye Color:"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eyecolorSpinner"
+            android:layout_below="@id/eye_textView"
+            style="@style/text_view"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:textAlignment="viewStart"
+            />
+
+        <TextView
+            style="@style/text_view"
+            android:id="@+id/bday_textView"
+            android:layout_below="@id/eyecolorSpinner"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday:"
+            />
+
+        <DatePicker
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:headerBackground="@android:color/holo_orange_light"
+            android:windowSoftInputMode="stateHidden"
+            android:maxDate="01/01/1998"
+            android:layout_below="@+id/bday_textView"
+            android:layout_alignParentStart="true"></DatePicker>
+
+        <TextView
+            style="@style/text_view"
+            android:id="@+id/shirtsize_textView"
+            android:layout_below="@id/date"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shirt size:"
+            android:textAlignment="viewStart"
+            />
+        <RadioGroup
+            android:id="@+id/radio"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shirtsize_textView"
+            >
+
+            <RadioButton
+                android:id="@+id/xs"
+                style="@style/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:checked="true"
+                android:text="XS"/>
+            <RadioButton
+                android:id="@+id/s"
+                android:layout_marginLeft="@dimen/ten"
+                style="@style/radio"
+                android:layout_toRightOf="@id/xs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                />
+            <RadioButton
+                android:id="@+id/m"
+                style="@style/radio"
+                android:layout_toRightOf="@id/s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="M"
+                />
+            <RadioButton
+                android:id="@+id/l"
+                style="@style/radio"
+                android:layout_toRightOf="@id/m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="L"
+                />
+
+            <RadioButton
+                android:id="@+id/xl"
+                style="@style/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="XL"
+                android:layout_alignBottom="@+id/radio"
+                android:layout_centerHorizontal="true" />\
+            <RadioButton
+                android:id="@+id/xxl"
+                style="@style/radio"
+                android:layout_toRightOf="@id/xl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="XXL"  />
+        </RadioGroup>
+
+        <TextView
+            style="@style/text_view"
+            android:id="@+id/pantsize_textView"
+            android:layout_below="@id/radio"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pant size:"
+            android:textAlignment="viewStart"
+            />
+        <TextView
+            android:id="@+id/pantseekText"
+            android:layout_below="@id/pantsize_textView"
+            android:layout_marginLeft="@dimen/ten"
+            style="@style/text_view"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:id="@+id/seekPant"
+            android:layout_below="@id/pantsize_textView"
+            android:layout_toRightOf="@id/pantseekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:backgroundTint="@color/white"
+            style="@android:style/Widget.Material.SeekBar" />
+        <TextView
+            style="@style/text_view"
+            android:id="@+id/shirtseek_textView"
+            android:layout_below="@id/pantseekText"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shirt size:"
+            android:layout_marginBottom="2dp"
+            android:textAlignment="viewStart"
+            />
+        <TextView
+            android:id="@+id/shirtseekText"
+            android:layout_below="@id/shirtseek_textView"
+            android:layout_marginLeft="@dimen/ten"
+            style="@style/text_view"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:id="@+id/seekShirt"
+            android:layout_below="@id/shirtseek_textView"
+            android:layout_toRightOf="@id/shirtseekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:backgroundTint="@color/white"
+            style="@android:style/Widget.Material.SeekBar" />
+
+        <TextView
+            style="@style/text_view"
+            android:id="@+id/shoeseek_textView"
+            android:layout_below="@id/seekShirt"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shoe size:"
+            android:textAlignment="viewStart"
+            />
+        <TextView
+            android:id="@+id/shoeseekText"
+            android:layout_below="@id/shoeseek_textView"
+            android:layout_marginLeft="@dimen/ten"
+            style="@style/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+        <SeekBar
+            android:id="@+id/seekShoe"
+            android:layout_below="@id/shoeseek_textView"
+            android:layout_toRightOf="@id/shoeseekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:backgroundTint="@color/white"
+            style="@android:style/Widget.Material.SeekBar" />
+
+        <Button
+            android:id="@+id/addInfoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/button"
+            android:layout_below="@id/seekShoe"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:text="Add"/>
+    </RelativeLayout>
+</ScrollView>

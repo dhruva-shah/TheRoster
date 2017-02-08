@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="list_row">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@color/text</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="text_view">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textColor">@color/mauve</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="text_info">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="radio">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+
+</resources>
